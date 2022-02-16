@@ -11,7 +11,7 @@
         v-for="(task, id) in tasks"
         :key="id"
         :todoTask="task"
-        @removeTaskEmit="removeTask($event)"
+        @removeTaskEmit="removeTask"
         >{{ id }}: {{ task }}</todo-item
       >
     </div>
