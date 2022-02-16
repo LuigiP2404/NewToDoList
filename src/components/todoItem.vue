@@ -1,30 +1,28 @@
 <template>
   <div class="todo-item">
-    <p>{{ todoTask.taskId }}:</p>
+    <!-- <p>{{ todoTask.taskId }}:</p> -->
     <p>{{ todoTask.taskText }}</p>
-    <i class="fas fa-trash" style="color: crimson" @click="removeTaskEmit(todoTask.taskId)"></i>
+    <i
+      class="fas fa-trash"
+      style="color: crimson"
+      @click="removeTaskEmit(todoTask.taskId)"
+    ></i>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'todoItem',
+  name: "todoItem",
   props: {
     todoTask: Object,
   },
-  data() {
-    return {
-
-    }
-  },
+  emits: ["removeTaskEmit"],
   methods: {
     removeTaskEmit(id) {
-      this.$emit('removeTaskEmit', id);
-    }
-  }
-}
+      this.$emit("removeTaskEmit", id);
+    },
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
