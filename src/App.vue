@@ -13,7 +13,7 @@
         :todoTask="task"
         @removeTaskEmit="removeTask"
         >{{ id }}: {{ task }}</todo-item
-      >
+      > 
     </div>
     <button @click="toggleList">{{ buttonText }}</button>
   </section>
