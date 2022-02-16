@@ -1,5 +1,7 @@
 # todo-list
 
+This project is hosted at --> https://luigip2404.github.io/ToDoList/
+
 ## Project setup
 ```
 npm install
